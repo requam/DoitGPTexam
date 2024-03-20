@@ -13,6 +13,7 @@ fkey.close()
 def send_msg(msg_log):
     response = ai.chat.completions.create(
         model="gpt-3.5-turbo",
+        # model="gpt-4-turbo-preview",
         top_p=0.5,
         temperature=0.5,
         messages=msg_log)
